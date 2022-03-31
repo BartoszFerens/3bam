@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: white;
+  align-items: center;
+	min-height: 100vh;
+}
+
+.image {
+  display: block;
+  margin: 5% auto 0 auto;
+  width: 50%;
+    
+      
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 20px;
+  text-align: center;
+  margin: 0% auto 20% auto;
+  letter-spacing: .2rem;
+  font-weight: 100;
+}
+
+
+#about {
+  background-color: #ddaf22;
+  width: auto;
+  height: 300px;
+  margin: 10% 0 0 0;
+  display: flex;
+}
+
+#text1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 100px;
+  flex:1;
+  height: 30%;
+  color: white;
+}
+
+#about2 {
+  flex:2;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3em;
+  color: black;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+@media (max-width: 800px){
+    h1 {
+        font-size: 12px;
+    }
+    #about {
+        height: 250px
+    }
+    #text1 {
+        font-size: 3em;
+    }
+    #about2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 400px){
+    h1 {
+        font-size: 12px;
+    }
+    #about {
+        height: 200px
+    }
+    #text1 {
+        font-size: 2em;
+    }
+    #about2 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 200px){
+    #about {
+        height: 100px
+    }
+    #text1 {
+        font-size: 1em;
+    }
+    #about2 {
+        font-size: 1em;
+    }
+}
+
+#books {
+  display: flex;
+}
+
+#books img{
+  display: block;
+  margin: 0 auto 0 auto;
+  width: 50%;
+}
+
+.flow1 {
+  display: flex;
+}
+
+.flow {
+  margin: 0;
+  flex: 1;
+}
+      
+.bodypanel {
+  background-color: #ddaf22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+  
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+  
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+  
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+  
+.pricing-features {
+  margin: 50px 0 25px;
+  color: black;
+}
+  
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #e1f1ff;
+}
+  
+.pricing-features-item:last-child{
+  border-bottom: 1px solid #e1f1ff;
+}
+  
+.pricing-price {
+  color: black; 
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+  
+.pricing-button {
+  border: 1px solid #ddaf22;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+}
+  
+.pricing-button:hover, .pricing-button:focus {
+  background-color: #e1f1ff;
+}
+  
+.pricing-button.is-featured {
+  background-color:#ddaf22;
+  color: white;
+}
+  
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+  background-color: #269aff;
+  color: white;
+}
+  
+  
+@media (min-width: 900px){
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+img {
+  display: block;
+  margin: 5% auto 0 auto;
+  width: 50%;
+}
